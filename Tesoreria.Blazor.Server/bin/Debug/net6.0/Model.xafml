@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Tesoreria.Module.BusinessObjects.Cuentas" DefaultListViewMasterDetailMode="ListViewOnly" />
+    <Class Name="Tesoreria.Module.BusinessObjects.Datos">
+      <AppearanceRules>
+        <AppearanceRule Id="HideImporteAbono" Priority="0" TargetItems="ImporteAbono" Criteria="[TipoOperacion.Nombre] != 'Entrada de recurso'" Enabled="True" Visibility="Hide" Context="DetailView" IsNewNode="True" />
+        <AppearanceRule Id="HideImporteCargo" TargetItems="ImporteCargo" Criteria="[TipoOperacion.Nombre] != 'Salida de recurso'" Enabled="True" Visibility="Hide" Context="DetailView" IsNewNode="True" />
+        <AppearanceRule Id="HideTipoMovimientosE" TargetItems="TipoMovimientosE" Criteria="[TipoOperacion.Nombre] != 'Entrada de recurso'" Enabled="True" Visibility="Hide" Context="DetailView" IsNewNode="True" />
+        <AppearanceRule Id="HideTipoMovimientosS" Priority="0" TargetItems="TipoMovimientosS" Criteria="[TipoOperacion.Nombre] != 'Salida de recurso'" Enabled="False" Context="DetailView" Visibility="Hide" IsNewNode="True" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="Accordion">
+    <Items>
+      <Item Id="KPI" Removed="True" />
+      <Item Id="Reports">
+        <Items>
+          <Item Id="Analysis_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="23.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="23.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="23.1.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor">
+    <DetailView Id="Datos_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="99.92348890589136">
+            <LayoutGroup Id="Datos" ShowCaption="True" Index="0" RelativeSize="99.83277591973244" Removed="True">
+              <LayoutGroup Id="Autod3b99089-4814-49e2-95bb-a1b57ee33d81" ShowCaption="False" Caption="Autod3b99089-4814-49e2-95bb-a1b57ee33d81(5)" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Auto54f11d57-8d21-4619-bd1f-cd7c09948a78" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="6.071428571428571" IsNewNode="True">
+                  <LayoutItem Id="FechaOperacion" ViewItem="FechaOperacion" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="Mes" ViewItem="Mes" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto38185970-dfe5-4fa2-82b3-71ffe39dbceb" ShowCaption="False" Caption="" Index="1" RelativeSize="93.92857142857143" IsNewNode="True">
+                  <LayoutItem Id="Item1" Index="0" RelativeSize="1.9011406844106464" IsNewNode="True" />
+                  <LayoutGroup Id="Autod7deed18-6641-45d8-9478-76e322b3dfaf" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="98.09885931558935" IsNewNode="True">
+                    <LayoutGroup Id="Datos_col1" ShowCaption="False" Index="0" RelativeSize="49.56896551724138" IsNewNode="True">
+                      <LayoutItem Id="Cuenta" ViewItem="Cuenta" Index="0" RelativeSize="6.2015503875969" IsNewNode="True" />
+                      <LayoutItem Id="Comites" ViewItem="Comites" Index="1" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="TipoOperacion" ViewItem="TipoOperacion" Index="2" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="TipoMovimientosE" ViewItem="TipoMovimientosE" Index="3" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="TipoMovimientosS" ViewItem="TipoMovimientosS" Index="4" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="BancoReceptorS" ViewItem="BancoReceptorS" Index="5" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="NombreCtaRegistro" ViewItem="NombreCtaRegistro" Index="6" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="BancoRegistros" ViewItem="BancoRegistros" Index="7" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="EmisorProveedorBeneficiarios" ViewItem="EmisorProveedorBeneficiarios" Index="8" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="CuentaCuentaClabeLineaCap" ViewItem="CuentaCuentaClabeLineaCap" Index="9" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="FolioInterno" ViewItem="FolioInterno" Index="10" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="FolioIdentificadorOficio" ViewItem="FolioIdentificadorOficio" Index="11" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="FechaOficio" ViewItem="FechaOficio" Index="12" RelativeSize="38.372093023255815" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Datos_col2" ShowCaption="False" Index="1" RelativeSize="50.43103448275862" IsNewNode="True">
+                      <LayoutItem Id="FolioFiscal" ViewItem="FolioFiscal" Index="0" RelativeSize="6.2015503875969" IsNewNode="True" />
+                      <LayoutItem Id="NoFacturaDocumentoComprobatorio" ViewItem="NoFacturaDocumentoComprobatorio" Index="1" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="ConceptoPagoGasto" ViewItem="ConceptoPagoGasto" Index="2" RelativeSize="13.953488372093023" IsNewNode="True" />
+                      <LayoutItem Id="ConceptoPortal" ViewItem="ConceptoPortal" Index="3" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="ClaveRastreoReferencia" ViewItem="ClaveRastreoReferencia" Index="4" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="ImporteCargo" ViewItem="ImporteCargo" Index="5" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="ImporteAbono" ViewItem="ImporteAbono" Index="6" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="Area" ViewItem="Area" Index="7" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="Status" ViewItem="Status" Index="8" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="AreaRequiriente" Index="9" RelativeSize="1.937984496124031" IsNewNode="True" />
+                      <LayoutItem Id="Estatus" Index="10" RelativeSize="1.937984496124031" IsNewNode="True" />
+                      <LayoutItem Id="Observaciones" ViewItem="Observaciones" Index="11" RelativeSize="13.953488372093023" IsNewNode="True" />
+                      <LayoutItem Id="Banco" ViewItem="Banco" Index="12" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="TipoGasto" ViewItem="TipoGasto" Index="13" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="Nomenclatura" ViewItem="Nomenclatura" Index="14" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="NombreAlias" ViewItem="NombreAlias" Index="15" RelativeSize="5.038759689922481" IsNewNode="True" />
+                      <LayoutItem Id="Concatenar" ViewItem="Concatenar" Index="16" RelativeSize="6.589147286821706" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <TabbedGroup Id="Item2" CaptionLocation="Top" Index="0" RelativeSize="99.15773353751914" IsNewNode="True">
+              <LayoutGroup Id="Datos" ShowCaption="True" Index="0" RelativeSize="100" Caption="DATOS" IsNewNode="True">
+                <LayoutGroup Id="Autod3b99089-4814-49e2-95bb-a1b57ee33d81" ShowCaption="False" Caption="Autod3b99089-4814-49e2-95bb-a1b57ee33d81(5)" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Auto7dad9848-5598-49c2-b2d5-0cac404f38ac" ShowCaption="False" Caption="Auto7dad9848-5598-49c2-b2d5-0cac404f38ac(6)" Direction="Horizontal" Index="0" RelativeSize="2.9576338928856916" IsNewNode="True">
+                    <LayoutItem Id="FechaOperacion" ViewItem="FechaOperacion" Index="0" RelativeSize="37.9746835443038" IsNewNode="True" />
+                    <LayoutItem Id="User" ViewItem="User" Index="1" RelativeSize="29.211295034079843" IsNewNode="True" />
+                    <LayoutItem Id="Mes" ViewItem="Mes" Index="2" RelativeSize="32.81402142161636" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto472c8e07-643d-42bb-a38f-ad0defe99b4a" ShowCaption="False" Caption="Auto472c8e07-643d-42bb-a38f-ad0defe99b4a(9)" Index="1" RelativeSize="97.0423661071143" IsNewNode="True">
+                    <LayoutItem Id="Item1" Index="0" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="12.355848434925864" Caption="Datos de la cuenta" IsNewNode="True">
+                      <LayoutItem Id="Cuenta" ViewItem="Cuenta" Index="0" RelativeSize="28.333333333333332" IsNewNode="True" />
+                      <LayoutItem Id="Comites" ViewItem="Comites" Index="1" RelativeSize="21.666666666666668" IsNewNode="True" />
+                      <LayoutItem Id="BancoRegistros" ViewItem="BancoRegistros" Index="2" RelativeSize="21.666666666666668" IsNewNode="True" />
+                      <LayoutItem Id="NombreCtaRegistro" ViewItem="NombreCtaRegistro" Index="3" RelativeSize="28.333333333333332" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Item3" Index="2" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item5" ShowCaption="True" CaptionLocation="Top" Index="3" RelativeSize="10.214168039538714" Caption="Movimientos" IsNewNode="True">
+                      <LayoutItem Id="TipoOperacion" ViewItem="TipoOperacion" Index="0" RelativeSize="36.170212765957444" IsNewNode="True" />
+                      <LayoutItem Id="TipoMovimientosE" ViewItem="TipoMovimientosE" Index="1" RelativeSize="27.659574468085108" IsNewNode="True" />
+                      <LayoutItem Id="TipoMovimientosS" ViewItem="TipoMovimientosS" Index="2" RelativeSize="36.170212765957444" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Item6" Index="4" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item8" ShowCaption="True" CaptionLocation="Top" Index="5" RelativeSize="10.214168039538714" Caption="Datos de la cuenta externa" IsNewNode="True">
+                      <LayoutItem Id="EmisorProveedorBeneficiarios" ViewItem="EmisorProveedorBeneficiarios" Index="0" RelativeSize="36.170212765957444" IsNewNode="True" />
+                      <LayoutItem Id="BancoReceptorS" ViewItem="BancoReceptorS" Index="1" RelativeSize="27.659574468085108" IsNewNode="True" />
+                      <LayoutItem Id="CuentaCuentaClabeLineaCap" ViewItem="CuentaCuentaClabeLineaCap" Index="2" RelativeSize="36.170212765957444" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Item7" Index="6" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item9" ShowCaption="True" CaptionLocation="Top" Index="7" RelativeSize="20.42833607907743" Caption="Informacion adicional" IsNewNode="True">
+                      <LayoutItem Id="FechaOficio" ViewItem="FechaOficio" Index="0" RelativeSize="15.596330275229358" IsNewNode="True" />
+                      <LayoutItem Id="FolioInterno" ViewItem="FolioInterno" Index="1" RelativeSize="11.926605504587156" IsNewNode="True" />
+                      <LayoutItem Id="FolioIdentificadorOficio" ViewItem="FolioIdentificadorOficio" Index="2" RelativeSize="11.926605504587156" IsNewNode="True" />
+                      <LayoutItem Id="FolioFiscal" ViewItem="FolioFiscal" Index="3" RelativeSize="11.926605504587156" IsNewNode="True" />
+                      <LayoutItem Id="NoFacturaDocumentoComprobatorio" ViewItem="NoFacturaDocumentoComprobatorio" Index="4" RelativeSize="11.926605504587156" IsNewNode="True" />
+                      <LayoutItem Id="ConceptoPagoGasto" ViewItem="ConceptoPagoGasto" Index="5" RelativeSize="36.69724770642202" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Item12" Index="8" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item11" ShowCaption="True" CaptionLocation="Top" Index="9" RelativeSize="12.355848434925864" Caption="Portal" IsNewNode="True">
+                      <LayoutItem Id="ConceptoPortal" ViewItem="ConceptoPortal" Index="0" RelativeSize="28.333333333333332" IsNewNode="True" />
+                      <LayoutItem Id="ClaveRastreoReferencia" ViewItem="ClaveRastreoReferencia" Index="1" RelativeSize="21.666666666666668" IsNewNode="True" />
+                      <LayoutItem Id="ImporteCargo" ViewItem="ImporteCargo" Index="2" RelativeSize="21.666666666666668" IsNewNode="True" />
+                      <LayoutItem Id="ImporteAbono" ViewItem="ImporteAbono" Index="3" RelativeSize="28.333333333333332" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Item10" Index="10" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item13" ShowCaption="True" CaptionLocation="Top" Index="11" RelativeSize="14.00329489291598" Caption="Informacion interna" IsNewNode="True">
+                      <LayoutItem Id="Area" ViewItem="Area" Index="0" RelativeSize="24.285714285714285" IsNewNode="True" />
+                      <LayoutItem Id="Status" ViewItem="Status" Index="1" RelativeSize="18.571428571428573" IsNewNode="True" />
+                      <LayoutItem Id="Observaciones" ViewItem="Observaciones" Index="2" RelativeSize="57.142857142857146" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="AreaRequiriente" Index="12" RelativeSize="0.8237232289950577" IsNewNode="True" />
+                    <LayoutGroup Id="Item14" ShowCaption="True" CaptionLocation="Top" Index="13" RelativeSize="14.497528830313016" Caption="Informacion final" IsNewNode="True">
+                      <LayoutItem Id="Banco" ViewItem="Banco" Index="0" RelativeSize="23.28767123287671" IsNewNode="True" />
+                      <LayoutItem Id="TipoGasto" ViewItem="TipoGasto" Index="1" RelativeSize="17.80821917808219" IsNewNode="True" />
+                      <LayoutItem Id="Nomenclatura" ViewItem="Nomenclatura" Index="2" RelativeSize="17.80821917808219" IsNewNode="True" />
+                      <LayoutItem Id="NombreAlias" ViewItem="NombreAlias" Index="3" RelativeSize="17.80821917808219" IsNewNode="True" />
+                      <LayoutItem Id="Concatenar" ViewItem="Concatenar" Index="4" RelativeSize="23.28767123287671" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoaf8c05d9-2716-4767-8653-86014df145d0" ShowCaption="False" Caption="Autoaf8c05d9-2716-4767-8653-86014df145d0(11)" Direction="Horizontal" Index="14" RelativeSize="0.16474464579901152" IsNewNode="True">
+                      <LayoutGroup Id="Datos_col1" ShowCaption="False" Index="0" RelativeSize="68.5491723466407" IsNewNode="True">
+                        <LayoutGroup Id="Auto6f29abf3-fe82-463a-9bab-3b0c6b8d3e57" ShowCaption="False" Caption="Auto6f29abf3-fe82-463a-9bab-3b0c6b8d3e57(18)" Direction="Horizontal" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutGroup Id="Auto401131da-f935-495a-933d-29dcd17f3e41" ShowCaption="False" Caption="Auto401131da-f935-495a-933d-29dcd17f3e41(21)" Index="1" RelativeSize="50" IsNewNode="True">
+                          <LayoutGroup Id="Autod644bd01-1dcc-4d7b-9245-a4b8f0ddad8b" ShowCaption="False" Caption="Autod644bd01-1dcc-4d7b-9245-a4b8f0ddad8b(23)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                            <LayoutGroup Id="Auto1d2586b7-600f-4d12-ba71-1755f88bca82" ShowCaption="False" Caption="Auto1d2586b7-600f-4d12-ba71-1755f88bca82(24)" Index="0" RelativeSize="54.82954545454545" IsNewNode="True">
+                              <LayoutGroup Id="Auto2d411836-2c19-4800-b930-18608c044a42" ShowCaption="False" Caption="Auto2d411836-2c19-4800-b930-18608c044a42(25)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True" />
+                            </LayoutGroup>
+                            <LayoutGroup Id="Auto2fa29593-3683-43db-9e2a-654c117e6219" ShowCaption="False" Caption="Auto2fa29593-3683-43db-9e2a-654c117e6219(29)" Index="1" RelativeSize="45.17045454545455" IsNewNode="True" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                      <LayoutGroup Id="Datos_col2" ShowCaption="False" Index="1" RelativeSize="31.450827653359298" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutItem Id="Item15" Index="1" RelativeSize="0.7656967840735069" IsNewNode="True" />
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="0.07656967840735068" Index="2">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="0.07651109410864575" Caption="SizeableEditors">
+            <LayoutItem Id="Observaciones" RelativeSize="100" Index="0" Removed="True" />
+            <LayoutItem Id="ConceptoPagoGasto" RelativeSize="45.76271186440678" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Datos_ListView">
+      <Columns>
+        <ColumnInfo Id="ConceptoPagoGasto" Index="-1" />
+        <ColumnInfo Id="Corte" Index="-1" />
+        <ColumnInfo Id="Observaciones" Index="-1" />
+        <ColumnInfo Id="User" Index="-1" />
+        <ColumnInfo Id="FechaOperacion" Index="0" />
+        <ColumnInfo Id="Mes" Index="1" />
+        <ColumnInfo Id="Cuenta" Index="2" />
+        <ColumnInfo Id="BancoRegistros" Index="4" />
+        <ColumnInfo Id="NombreCtaRegistro" Index="5" />
+        <ColumnInfo Id="TipoMovimientosS" Index="7" />
+        <ColumnInfo Id="EmisorProveedorBeneficiarios" Index="8" />
+        <ColumnInfo Id="BancoReceptorS" Index="9" />
+        <ColumnInfo Id="CuentaCuentaClabeLineaCap" Index="10" />
+        <ColumnInfo Id="FechaOficio" Index="11" />
+        <ColumnInfo Id="FolioInterno" Index="12" />
+        <ColumnInfo Id="FolioIdentificadorOficio" Index="13" />
+        <ColumnInfo Id="FolioFiscal" Index="14" />
+        <ColumnInfo Id="NoFacturaDocumentoComprobatorio" Index="15" />
+        <ColumnInfo Id="ConceptoPortal" Index="17" />
+        <ColumnInfo Id="ClaveRastreoReferencia" Index="18" />
+        <ColumnInfo Id="ImporteAbono" Index="19" />
+        <ColumnInfo Id="ImporteCargo" Index="19" />
+        <ColumnInfo Id="Area" Index="20" />
+        <ColumnInfo Id="Status" Index="21" />
+        <ColumnInfo Id="Banco" Index="22" />
+        <ColumnInfo Id="TipoGasto" Index="23" />
+        <ColumnInfo Id="Nomenclatura" Index="24" />
+        <ColumnInfo Id="NombreAlias" Index="25" />
+        <ColumnInfo Id="Concatenar" Index="26" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

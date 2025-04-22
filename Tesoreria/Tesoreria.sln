@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesoreria.Module", "..\Tesoreria.Module\Tesoreria.Module.csproj", "{B2B5E145-C03B-4BBB-875F-1732D3473B8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesoreria.Win", "..\Tesoreria.Win\Tesoreria.Win.csproj", "{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesoreria.Blazor.Server", "..\Tesoreria.Blazor.Server\Tesoreria.Blazor.Server.csproj", "{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2B5E145-C03B-4BBB-875F-1732D3473B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B5E145-C03B-4BBB-875F-1732D3473B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B5E145-C03B-4BBB-875F-1732D3473B8B}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{B2B5E145-C03B-4BBB-875F-1732D3473B8B}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{B2B5E145-C03B-4BBB-875F-1732D3473B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B5E145-C03B-4BBB-875F-1732D3473B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

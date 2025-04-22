@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="Tesoreria.Module.BusinessObjects.Registro">
+      <AppearanceRules Id="AppearanceRules">
+        <AppearanceRule Id="DisableTipoMovimientosE" Criteria="[TipoOperacion.Nombre] &lt;&gt; 'Entrada de recurso'" TargetItems="TipoMovimientosE" Enabled="False" Context="DetailView" />
+        <AppearanceRule Id="DisableTipomovimientosS" Criteria="[TipoOperacion.Nombre] &lt;&gt; 'Salida de recurso'" TargetItems="TipoMovimientosS" Enabled="False" Context="DetailView" />
+        <AppearanceRule Id="EnableTipoMovimientosE" Criteria="[TipoOperacion.Nombre] = 'Entrada de recurso'" TargetItems="TipoMovimientosE" Enabled="True" Context="DetailView" />
+        <AppearanceRule Id="EnableTipoMovimientosS" Criteria="[TipoOperacion.Nombre] = 'Salida de recurso'" TargetItems="TipoMovimientosS" Enabled="True" AppearanceItemType="ViewItem" Context="DetailView" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <Views Id="Views">
+    <DetailView Id="Registro_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="User" AllowEdit="False" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Registro" Direction="Vertical" RelativeSize="83.94648829431438">
+              <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="7.327586206896552" />
+              <LayoutGroup Id="Auto64daca42-67b9-4283-bcd0-6aba0920eafb" ShowCaption="False" Caption="Auto64daca42-67b9-4283-bcd0-6aba0920eafb(5)" Direction="Horizontal" Index="1" RelativeSize="92.67241379310344">
+                <LayoutGroup Id="Registro_col1" ShowCaption="False" Index="0" RelativeSize="49.57446808510638">
+                  <LayoutItem Id="User" ViewItem="User" Index="0" RelativeSize="7.441860465116279" />
+                  <LayoutItem Id="Comites" ViewItem="Comites" Index="1" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="FechaOperacion" ViewItem="FechaOperacion" Index="2" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Mes" ViewItem="Mes" Index="3" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="TipoOperacion" ViewItem="TipoOperacion" Index="4" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="TipoMovimientosE" ViewItem="TipoMovimientosE" Index="5" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="TipoMovimientosS" ViewItem="TipoMovimientosS" Index="6" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Cuenta" ViewItem="Cuenta" Index="7" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="BancoRegistro" ViewItem="BancoRegistro" Index="8" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="NombreCtaRegistro" ViewItem="NombreCtaRegistro" Index="9" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="EmisorProveedorBeneficiario" ViewItem="EmisorProveedorBeneficiario" Index="10" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="BancoReceptor" ViewItem="BancoReceptor" Index="11" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="CuentaCuentaClabeLineaCap" ViewItem="CuentaCuentaClabeLineaCap" Index="12" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="FolioInterno" ViewItem="FolioInterno" Index="13" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="FolioIdentificadorOficio" ViewItem="FolioIdentificadorOficio" Index="14" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="FechaOficio" ViewItem="FechaOficio" Index="15" RelativeSize="7.906976744186046" />
+                </LayoutGroup>
+                <LayoutGroup Id="Registro_col2" ShowCaption="False" Index="1" RelativeSize="50.42553191489362">
+                  <LayoutItem Id="FolioFiscal" ViewItem="FolioFiscal" Index="0" RelativeSize="7.441860465116279" />
+                  <LayoutItem Id="NoFacturaDocumentoComprobatorio" ViewItem="NoFacturaDocumentoComprobatorio" Index="1" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="ConceptoPagoGasto" ViewItem="ConceptoPagoGasto" Index="2" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="ConceptoPortal" ViewItem="ConceptoPortal" Index="3" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="ClaveRastreoReferencia" ViewItem="ClaveRastreoReferencia" Index="4" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="ImporteCargo" ViewItem="ImporteCargo" Index="5" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="ImporteAbono" ViewItem="ImporteAbono" Index="6" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="AreaRequiriente" ViewItem="AreaRequiriente" Index="7" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Estatus" ViewItem="Estatus" Index="8" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Observaciones" ViewItem="Observaciones" Index="9" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Banco" ViewItem="Banco" Index="10" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="TipoGasto" ViewItem="TipoGasto" Index="11" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Nomenclatura" ViewItem="Nomenclatura" Index="12" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="NombreAlias" ViewItem="NombreAlias" Index="13" RelativeSize="6.046511627906977" />
+                  <LayoutItem Id="Concatenar" ViewItem="Concatenar" Index="14" RelativeSize="13.953488372093023" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Registro_col1" Removed="True" />
+              <LayoutGroup Id="Registro_col2" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="16.05351170568562">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

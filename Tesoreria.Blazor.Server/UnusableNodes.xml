@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Registro_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Registro">
+              <LayoutGroup Id="Auto64daca42-67b9-4283-bcd0-6aba0920eafb">
+                <LayoutGroup Id="Registro_col1">
+                  <LayoutItem Id="IngresoEgreso" ViewItem="IngresoEgreso" />
+                  <LayoutItem Id="Comite" ViewItem="Comite" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

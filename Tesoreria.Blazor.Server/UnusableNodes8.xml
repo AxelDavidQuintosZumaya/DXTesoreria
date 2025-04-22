@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Datos_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Datos">
+              <LayoutGroup Id="Autod3b99089-4814-49e2-95bb-a1b57ee33d81">
+                <LayoutGroup Id="Datos_col1">
+                  <LayoutItem Id="BancoReceptor1" ViewItem="BancoReceptor1" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
