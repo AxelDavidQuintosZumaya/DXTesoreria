@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tesoreria.Win")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e42fbd3c77699b3c7189e6e8d5a4dbd4a1c13359")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tesoreria.Win")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tesoreria.Win")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]

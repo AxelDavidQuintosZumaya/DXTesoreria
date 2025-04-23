@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nj36p+q7eaNnKi/AuZAzG6C+Wu4hmkfre3iUvaZjbAY=",
+  "Hash": "HNH7RwfvLck28ESYnjG/hufR9IJLxKTSEp0ukrZEGLc=",
   "Source": "Tesoreria.Blazor.Server",
   "BasePath": "_content/Tesoreria.Blazor.Server",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Tesoreria.Blazor.Server\\wwwroot",
       "Source": "Tesoreria.Blazor.Server",
-      "ContentRoot": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/Tesoreria.Blazor.Server",
       "Pattern": "**"
     }
@@ -5793,10 +5793,10 @@
       "OriginalItemSpec": "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.expressapp.office.blazor\\23.1.4\\staticwebassets\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\css\\site.css",
       "SourceId": "Tesoreria.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/Tesoreria.Blazor.Server",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -5812,10 +5812,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\favicon.ico",
       "SourceId": "Tesoreria.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/Tesoreria.Blazor.Server",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -5831,10 +5831,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\images\\Logo.svg",
+      "Identity": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\images\\Logo.svg",
       "SourceId": "Tesoreria.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/Tesoreria.Blazor.Server",
       "RelativePath": "images/Logo.svg",
       "AssetKind": "All",
@@ -5850,10 +5850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo.svg"
     },
     {
-      "Identity": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
+      "Identity": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
       "SourceId": "Tesoreria.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/Tesoreria.Blazor.Server",
       "RelativePath": "images/SplashScreen.svg",
       "AssetKind": "All",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nfh+kKgcp4M=",
+  "dgSpecHash": "CK7CEW98+rI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Tesoreria.Blazor.Server.csproj",
+  "projectFilePath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\Tesoreria.Blazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.aspnetcore.common\\23.1.4\\devexpress.aspnetcore.common.23.1.4.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.aspnetcore.core\\23.1.4\\devexpress.aspnetcore.core.23.1.4.nupkg.sha512",

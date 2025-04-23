@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0YTdDexSIBU=",
+  "dgSpecHash": "hBx+B5Ncn/Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj",
+  "projectFilePath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Tesoreria.Module.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.charts\\23.1.4\\devexpress.charts.23.1.4.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.charts.core\\23.1.4\\devexpress.charts.core.23.1.4.nupkg.sha512",
