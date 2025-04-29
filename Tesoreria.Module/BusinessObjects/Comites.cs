@@ -43,14 +43,14 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(Nombre), ref _Nombre, value); }
         }
 
-        private string _CuentaRegistro;
-        [XafDisplayName("CuentaRegistro"), ToolTip("My hint message")]
-        [Persistent("CuentaRegistro"), RuleRequiredField(DefaultContexts.Save)]
-        public string CuentaRegistro
-        {
-            get { return _CuentaRegistro; }
-            set { SetPropertyValue(nameof(CuentaRegistro), ref _CuentaRegistro, value); }
-        }
+        //private string _CuentaRegistro;
+        //[XafDisplayName("CuentaRegistro"), ToolTip("My hint message")]
+        //[Persistent("CuentaRegistro"), RuleRequiredField(DefaultContexts.Save)]
+        //public string CuentaRegistro
+        //{
+        //    get { return _CuentaRegistro; }
+        //    set { SetPropertyValue(nameof(CuentaRegistro), ref _CuentaRegistro, value); }
+        //}
 
         [Association("Comites-Datos")]
         public XPCollection<Datos> Datos

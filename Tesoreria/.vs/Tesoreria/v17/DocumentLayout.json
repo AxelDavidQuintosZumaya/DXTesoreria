@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\documents\\github\\dxtesoreria\\tesoreria.module\\businessobjects\\comites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\documents\\github\\dxtesoreria\\tesoreria.module\\businessobjects\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -76,21 +82,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Datos.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
               "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
               "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
-              "ViewState": "AgIAAFwBAABAmZmZmRkjwG0BAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAqGZmZmYEwDYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T22:00:00.769Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -98,7 +103,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Comites.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
+              "ToolTip": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
+              "ViewState": "AgIAAB0AAAAANDMzMzP3vyQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T17:35:13.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAzwGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T17:14:08.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Model.xafml",
               "DocumentMoniker": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\Model.xafml",
               "RelativeDocumentMoniker": "..\\Tesoreria.Blazor.Server\\Model.xafml",
@@ -109,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Model.DesignedDiffs.xafml",
               "DocumentMoniker": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Model.DesignedDiffs.xafml",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\Model.DesignedDiffs.xafml",
@@ -120,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CortesViewController.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Controllers\\CortesViewController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\Controllers\\CortesViewController.cs",
@@ -132,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EmisorProveedorBeneficiario.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
@@ -144,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Model.xafml",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Model.xafml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Blazor.Server\\Model.xafml",
@@ -155,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CuentaCuentaClabeLineaCap.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
@@ -167,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Usuarios.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
@@ -179,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Comites.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
@@ -191,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "TipoOperacion.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoOperacion.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoOperacion.cs",
@@ -203,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Corte.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Corte.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Corte.cs",
@@ -215,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Cuentas.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Cuentas.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Cuentas.cs",
@@ -227,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "TipoMovimientoS.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoMovimientoS.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoMovimientoS.cs",
@@ -239,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Status.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Status.cs",
@@ -251,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Tesoreria.Module.csproj",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj",
@@ -263,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Areas.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Areas.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Areas.cs",
@@ -275,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Bancos.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
@@ -287,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "TipoMovimiento.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoMovimiento.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoMovimiento.cs",
@@ -299,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Blazor.Server\\Program.cs",
@@ -311,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Win\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Win\\Program.cs",
@@ -323,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "IngresoDatos.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\IngresoDatos.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\BusinessObjects\\IngresoDatos.cs",
@@ -335,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Model.DesignedDiffs.xafml",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Model.DesignedDiffs.xafml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Tesoreria.Module\\Model.DesignedDiffs.xafml",

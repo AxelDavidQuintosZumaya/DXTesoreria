@@ -33,6 +33,16 @@ namespace Tesoreria.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
+
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        {
+            base.OnChanged(propertyName, oldValue, newValue);
+
+            this.NombreCompleto = Nombre + " " + APaterno + " " + AMaterno;
+        }
+
+
+
         private string _Nombre;
         [XafDisplayName("Nombre"), ToolTip("Nombre del empleado")]
         [Persistent("Nombre")]
@@ -60,13 +70,22 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(AMaterno), ref _AMaterno, value); }
         }
 
-        private string _ClaveEmpleado;
-        [XafDisplayName("Clave Empleado"), ToolTip("Identificador único del empleado")]
-        [Persistent("ClaveEmpleado")]
-        public string ClaveEmpleado
+        private string _NombreCompleto;
+        [XafDisplayName("Nombre Completo"), ToolTip("Nombre del empleado")]
+        [Persistent("NombreCompleto")]
+        public string NombreCompleto
         {
-            get { return _ClaveEmpleado; }
-            set { SetPropertyValue(nameof(ClaveEmpleado), ref _ClaveEmpleado, value); }
+            get { return _NombreCompleto; }
+            set { SetPropertyValue(nameof(NombreCompleto), ref _NombreCompleto, value); }
+        }
+
+        private string _CorreoElectronico;
+        [XafDisplayName("Correo electronico"), ToolTip("Identificador único del empleado")]
+        [Persistent("CorreoElectronico")]
+        public string CorreoElectronico
+        {
+            get { return _CorreoElectronico; }
+            set { SetPropertyValue(nameof(CorreoElectronico), ref _CorreoElectronico, value); }
         }
 
         [Association("Usuarios-Datos")]
