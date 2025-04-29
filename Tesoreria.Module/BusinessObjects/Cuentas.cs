@@ -43,13 +43,20 @@ namespace Tesoreria.Module.BusinessObjects
         }
 
         private string _Numero;
-        [XafDisplayName("Numero"), ToolTip("My hint message")]
-        [Persistent("Numero"), RuleRequiredField(DefaultContexts.Save)]
-        
+        [XafDisplayName("Número")]
         public string Numero
         {
             get { return _Numero; }
-            set { SetPropertyValue(nameof(Numero), ref _Numero, value); }
+            set
+            {
+                if (SetPropertyValue(nameof(Numero), ref _Numero, value))
+                {
+                    // Actualizar Digitos automáticamente
+                    Digitos = string.IsNullOrEmpty(value) || value.Length < 5
+                        ? value
+                        : value.Substring(value.Length - 5);
+                }
+            }
         }
 
         private string _Digitos;

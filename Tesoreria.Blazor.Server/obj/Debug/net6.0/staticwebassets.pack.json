@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\images\\Logo.svg",
+      "Id": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\images\\Logo.svg",
       "PackagePath": "staticwebassets\\images\\Logo.svg"
     },
     {
-      "Id": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
+      "Id": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
       "PackagePath": "staticwebassets\\images\\SplashScreen.svg"
     },
     {

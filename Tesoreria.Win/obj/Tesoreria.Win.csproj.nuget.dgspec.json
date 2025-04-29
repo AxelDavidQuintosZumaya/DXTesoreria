@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Win\\Tesoreria.Win.csproj": {}
+    "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Win\\Tesoreria.Win.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Tesoreria.Module.csproj": {
+    "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Tesoreria.Module.csproj",
+        "projectUniqueName": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj",
         "projectName": "Tesoreria.Module",
-        "projectPath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Tesoreria.Module.csproj",
+        "projectPath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj",
         "packagesPath": "C:\\Users\\aquintos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\obj\\",
+        "outputPath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
@@ -187,14 +187,14 @@
         }
       }
     },
-    "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Win\\Tesoreria.Win.csproj": {
+    "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Win\\Tesoreria.Win.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Win\\Tesoreria.Win.csproj",
+        "projectUniqueName": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Win\\Tesoreria.Win.csproj",
         "projectName": "Tesoreria.Win",
-        "projectPath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Win\\Tesoreria.Win.csproj",
+        "projectPath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Win\\Tesoreria.Win.csproj",
         "packagesPath": "C:\\Users\\aquintos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Win\\obj\\",
+        "outputPath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Win\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
@@ -236,8 +236,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Tesoreria.Module.csproj": {
-                "projectPath": "C:\\Users\\aquintos\\Documents\\GitHub\\DXTesoreria\\Tesoreria.Module\\Tesoreria.Module.csproj"
+              "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj": {
+                "projectPath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj"
               }
             }
           }

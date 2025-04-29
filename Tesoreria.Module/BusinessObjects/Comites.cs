@@ -16,7 +16,7 @@ namespace Tesoreria.Module.BusinessObjects
 {
     [DefaultClassOptions]
     //[ImageName("BO_Contact")]
-    //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
+    [DefaultProperty("Nombre")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
@@ -42,15 +42,6 @@ namespace Tesoreria.Module.BusinessObjects
             get { return _Nombre; }
             set { SetPropertyValue(nameof(Nombre), ref _Nombre, value); }
         }
-
-        //private string _CuentaRegistro;
-        //[XafDisplayName("CuentaRegistro"), ToolTip("My hint message")]
-        //[Persistent("CuentaRegistro"), RuleRequiredField(DefaultContexts.Save)]
-        //public string CuentaRegistro
-        //{
-        //    get { return _CuentaRegistro; }
-        //    set { SetPropertyValue(nameof(CuentaRegistro), ref _CuentaRegistro, value); }
-        //}
 
         [Association("Comites-Datos")]
         public XPCollection<Datos> Datos

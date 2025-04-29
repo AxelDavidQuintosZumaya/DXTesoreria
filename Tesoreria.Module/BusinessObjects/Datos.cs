@@ -73,30 +73,41 @@ namespace Tesoreria.Module.BusinessObjects
             }
 
             if (TipoMovimientosE == null) {
-                if (TipoMovimientosS == null) {
-                    if (Mes == null)
-                    {
+                if (Mes == null)
+                {
 
-                    }
-                    else
-                    {
-                        this.Concatenar = MesNumerico;
-                    }
                 }
                 else
                 {
-                    this.Concatenar = TipoMovimientosS.Nombre + " " + MesNumerico;
+                    this.Concatenar = MesNumerico;
                 }
             }
             else
             {
-                this.Concatenar = TipoMovimientosE.Nombre + " " + MesNumerico;
+                this.Concatenar = TipoMovimientosE.Nombre + " " + Comites + " " + MesNumerico;
             }
         }
 
-        protected override void OnSaving()
+
+    protected override void OnSaving()
         {
             base.OnSaving();
+
+            DateTime hoy = DateTime.Today;
+            DateTime inicioMesActual = new DateTime(hoy.Year, hoy.Month, 1);
+            DateTime finMesActual = inicioMesActual.AddMonths(1).AddDays(-1);
+
+            DateTime inicioMesPasado = inicioMesActual.AddMonths(-1);
+            DateTime finMesPasado = inicioMesActual.AddDays(-1);
+            DateTime limiteMesPasado = finMesPasado.AddDays(5);
+
+            if (!(
+                (FechaOperacion.Date >= inicioMesActual && FechaOperacion.Date <= finMesActual) ||
+                (FechaOperacion.Date >= inicioMesPasado && FechaOperacion.Date <= finMesPasado && hoy <= limiteMesPasado)
+            ))
+            {
+                throw new UserFriendlyException("La fecha debe estar en el mes actual o en el mes pasado (solo si no han pasado más de 5 días desde que terminó ese mes).");
+            }
 
             // Solo continuar si hay importes válidos
             if (ImporteAbono == 0 && ImporteCargo == 0)
@@ -165,6 +176,7 @@ namespace Tesoreria.Module.BusinessObjects
         }
 
         private string _Mes;
+        [VisibleInDetailView(false)]
         [ModelDefault("AllowEdit", "False")]
         [XafDisplayName("Mes"), ToolTip("Nombre del mes en texto")]
         [Persistent("Mes")]
@@ -196,26 +208,11 @@ namespace Tesoreria.Module.BusinessObjects
             {
                 if (SetPropertyValue(nameof(TipoOperacion), ref _TipoOperacion, value))
                 {
-                    // Limpia campos según selección
-                    if (value?.Nombre == "Entrada de recurso")
-                    {
-                        TipoMovimientosS = null;
-                    }
-                    else if (value?.Nombre == "Salida de recurso")
-                    {
-                        TipoMovimientosE = null;
-                    }
-                    else
-                    {
-                        TipoMovimientosE = null;
-                        TipoMovimientosS = null;
-                    }
-
-                    if (value?.Nombre == "Entrada de recurso")
+                    if (value?.Nombre == "INGRESO")
                     {
                        ImporteCargo  = 0;
                     }
-                    else if (value?.Nombre == "Salida de recurso")
+                    else if (value?.Nombre == "EGRESO")
                     {
                         ImporteAbono = 0;
                     }
@@ -240,21 +237,11 @@ namespace Tesoreria.Module.BusinessObjects
         private TipoMovimiento _TipoMovimientosE;
         [Association("TipoMovimientoEntrada-Datos")]
 
-        [XafDisplayName("TipoMovimientoEntrada")]
+        [XafDisplayName("TipoMovimiento")]
         public TipoMovimiento TipoMovimientosE
         {
             get { return _TipoMovimientosE; }
             set { SetPropertyValue(nameof(TipoMovimientosE), ref _TipoMovimientosE, value); }
-        }
-
-        private TipoMovimientoS _TipoMovimientosS;
-        [Association("TipoMovimientoSalida-Datos")]
-
-        [XafDisplayName("TipoMovimientoSalida")]
-        public TipoMovimientoS TipoMovimientosS
-        {
-            get { return _TipoMovimientosS; }
-            set { SetPropertyValue(nameof(TipoMovimientosS), ref _TipoMovimientosS, value); }
         }
 
         private Cuentas _Cuenta;

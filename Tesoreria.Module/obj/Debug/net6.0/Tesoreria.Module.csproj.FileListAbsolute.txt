@@ -10,16 +10,3 @@ C:\Users\aquintos\source\repos\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Modul
 C:\Users\aquintos\source\repos\Tesoreria.Module\obj\Debug\net6.0\refint\Tesoreria.Module.dll
 C:\Users\aquintos\source\repos\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.pdb
 C:\Users\aquintos\source\repos\Tesoreria.Module\obj\Debug\net6.0\ref\Tesoreria.Module.dll
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\bin\Debug\net6.0\Tesoreria.Module.deps.json
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\bin\Debug\net6.0\Tesoreria.Module.dll
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\bin\Debug\net6.0\Tesoreria.Module.pdb
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.csproj.AssemblyReference.cache
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.AssemblyInfoInputs.cache
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.AssemblyInfo.cs
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.csproj.CoreCompileInputs.cache
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.sourcelink.json
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.dll
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\refint\Tesoreria.Module.dll
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\Tesoreria.Module.pdb
-C:\Users\aquintos\Documents\GitHub\DXTesoreria\Tesoreria.Module\obj\Debug\net6.0\ref\Tesoreria.Module.dll
