@@ -43,6 +43,15 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(Nombre), ref _Nombre, value); }
         }
 
+        private string _Abreviatura;
+        [XafDisplayName("Abreviatura"), ToolTip("My hint message")]
+        [Persistent("Abreviatura"), RuleRequiredField(DefaultContexts.Save)]
+        public string Abreviatura
+        {
+            get { return _Abreviatura; }
+            set { SetPropertyValue(nameof(Abreviatura), ref _Abreviatura, value); }
+        }
+
         [Association("Comites-Datos")]
         public XPCollection<Datos> Datos
         {

@@ -1,5 +1,6 @@
 ﻿using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
@@ -34,6 +35,12 @@ namespace Tesoreria.Module.BusinessObjects
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        {
+            base.OnChanged(propertyName, oldValue, newValue);
+            this.Concatenacion = Nombre + "-" + ClaveBanco;
+        }
+
         private string _Nombre;
         [XafDisplayName("Nombre"), ToolTip("My hint message")]
         [Persistent("Nombre"), RuleRequiredField(DefaultContexts.Save)]
@@ -41,6 +48,44 @@ namespace Tesoreria.Module.BusinessObjects
         {
             get { return _Nombre; }
             set { SetPropertyValue(nameof(Nombre), ref _Nombre, value); }
+        }
+
+        private string _ClaveBanco;
+        [XafDisplayName("ClaveBanco"), ToolTip("My hint message")]
+        [Persistent("ClaveBanco"), RuleRequiredField(DefaultContexts.Save)]
+        public string ClaveBanco
+        {
+            get { return _ClaveBanco; }
+            set { SetPropertyValue(nameof(ClaveBanco), ref _ClaveBanco, value); }
+        }
+
+        private string _NombreRazonSocial;
+        [XafDisplayName("NombreRazonSocial"), ToolTip("My hint message")]
+        [Persistent("NombreRazonSocial"), RuleRequiredField(DefaultContexts.Save)]
+        public string NombreRazonSocial
+        {
+            get { return _NombreRazonSocial; }
+            set { SetPropertyValue(nameof(NombreRazonSocial), ref _NombreRazonSocial, value); }
+        }
+
+        private string _Concatenacion;
+        [XafDisplayName("Concatenacion"), ToolTip("My hint message")]
+        [Persistent("Concatenacion"), RuleRequiredField(DefaultContexts.Save)]
+        public string Concatenacion
+        {
+            get { return _Concatenacion; }
+            set { SetPropertyValue(nameof(Concatenacion), ref _Concatenacion, value); }
+        }
+
+        private bool _CuentaPartido;
+
+        [XafDisplayName("CuentaPartido")]
+        [ToolTip("My hint message")]
+        [Persistent("CuentaPartido")]
+        public bool CuentaPartido
+        {
+            get { return _CuentaPartido; }
+            set { SetPropertyValue(nameof(CuentaPartido), ref _CuentaPartido, value); }
         }
 
         [Association("Banco-Cuentas")]

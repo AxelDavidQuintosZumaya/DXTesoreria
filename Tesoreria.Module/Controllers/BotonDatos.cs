@@ -58,13 +58,13 @@ namespace Tesoreria.Module.Controllers
             nuevoDatos.NombreCtaRegistro = datos1.NombreCtaRegistro;
             nuevoDatos.EmisorProveedorBeneficiarios = datos1.EmisorProveedorBeneficiarios;
             nuevoDatos.BancoReceptorS = datos1.BancoReceptorS;
-            nuevoDatos.CuentaCuentaClabeLineaCap = datos1.CuentaCuentaClabeLineaCap;
+            nuevoDatos.Cuenta = datos1.Cuenta;
             nuevoDatos.FolioInterno = datos1.FolioInterno;
             nuevoDatos.FolioIdentificadorOficio = datos1.FolioIdentificadorOficio;
             nuevoDatos.FechaOficio = datos1.FechaOficio;
             nuevoDatos.FolioFiscal = datos1.FolioFiscal;
             nuevoDatos.NoFacturaDocumentoComprobatorio = datos1.NoFacturaDocumentoComprobatorio;
-            nuevoDatos.ConceptoPagoGasto = datos1.ConceptoPagoGasto;
+            nuevoDatos.Concepto = datos1.Concepto;
             nuevoDatos.ConceptoPortal = datos1.ConceptoPortal;
             nuevoDatos.ClaveRastreoReferencia = datos1.ClaveRastreoReferencia;
             nuevoDatos.ImporteCargo = datos1.ImporteCargo;

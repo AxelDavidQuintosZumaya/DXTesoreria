@@ -33,23 +33,70 @@ namespace Tesoreria.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-        private string _Titular;
-        [XafDisplayName("Titular"), ToolTip("My hint message")]
-        [Persistent("Titular"), RuleRequiredField(DefaultContexts.Save)]
-        public string Titular
+
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
         {
-            get { return _Titular; }
-            set { SetPropertyValue(nameof(Titular), ref _Titular, value); }
+            base.OnChanged(propertyName, oldValue, newValue);
+
+            if (Comites != null && !string.IsNullOrEmpty(Comites.Nombre))
+            {
+                if (!string.IsNullOrEmpty(Nombre))
+                {
+                    this.NombreCompleto = Comites.Nombre.Substring(3) + " " + Nombre;
+                }
+                else
+                {
+                    this.NombreCompleto = Comites.Nombre.Substring(3);
+                }
+            }
         }
 
-        private string _Numero;
-        [XafDisplayName("Número")]
-        public string Numero
+        protected override void OnSaving()
         {
-            get { return _Numero; }
+            base.OnSaving();
+            if (!string.IsNullOrWhiteSpace(Cuenta))
+            {
+                var duplicado = Session.Query<Cuentas>()
+                    .Where(x => x.Cuenta == this.Cuenta && x.Oid != this.Oid)
+                    .FirstOrDefault();
+
+                if (duplicado != null)
+                {
+                    throw new UserFriendlyException("Ya existe un registro con el mismo numero de cuenta.");
+                }
+            }
+        }
+
+
+
+
+        private Usuarios _User;
+        [Association("Usuarios-Cuentas")]
+
+        [XafDisplayName("Usuarios")]
+        public Usuarios User
+        {
+            get { return _User; }
+            set { SetPropertyValue(nameof(User), ref _User, value); }
+        }
+
+        private string _Nombre;
+        [XafDisplayName("Nombre"), ToolTip("My hint message")]
+        [Persistent("Nombre"), RuleRequiredField(DefaultContexts.Save)]
+        public string Nombre
+        {
+            get { return _Nombre; }
+            set { SetPropertyValue(nameof(Nombre), ref _Nombre, value); }
+        }
+
+        private string _Cuenta;
+        [XafDisplayName("Cuenta")]
+        public string Cuenta
+        {
+            get { return _Cuenta; }
             set
             {
-                if (SetPropertyValue(nameof(Numero), ref _Numero, value))
+                if (SetPropertyValue(nameof(Cuenta), ref _Cuenta, value))
                 {
                     // Actualizar Digitos automáticamente
                     Digitos = string.IsNullOrEmpty(value) || value.Length < 5
@@ -69,6 +116,7 @@ namespace Tesoreria.Module.BusinessObjects
         }
 
         private Bancos _Bancos;
+        [DataSourceCriteria("CuentaPartido = true")]
         [Association("Banco-Cuentas")]
 
         [XafDisplayName("Banco")]
@@ -76,6 +124,30 @@ namespace Tesoreria.Module.BusinessObjects
         {
             get { return _Bancos; }
             set { SetPropertyValue(nameof(Bancos), ref _Bancos, value); }
+        }
+
+        public enum TipoCuentaEnum
+        {
+            [XafDisplayName("Sin Tipo")]
+            SinTipo,
+
+            [XafDisplayName("Gasto Programado")]
+            GastoProgramado,
+
+            [XafDisplayName("Ordinario")]
+            Ordinario
+        }
+
+
+        private TipoCuentaEnum _TipoCuenta;
+
+        [XafDisplayName("TipoCuenta")]
+        [ToolTip("My hint message")]
+        [Persistent("TipoCuenta")]
+        public TipoCuentaEnum TipoCuenta
+        {
+            get { return _TipoCuenta; }
+            set { SetPropertyValue(nameof(TipoCuenta), ref _TipoCuenta, value); }
         }
 
         [Association("Cuenta-Datos")]
@@ -98,6 +170,25 @@ namespace Tesoreria.Module.BusinessObjects
         {
             get { return _Comites; }
             set { SetPropertyValue(nameof(Comites), ref _Comites, value); }
+        }
+
+        private string _NombreCompleto;
+        [XafDisplayName("NombreCompleto"), ToolTip("My hint message")]
+        [Persistent("NombreCompleto"), RuleRequiredField(DefaultContexts.Save)]
+        public string NombreCompleto
+        {
+            get { return _NombreCompleto; }
+            set { SetPropertyValue(nameof(NombreCompleto), ref _NombreCompleto, value); }
+        }
+
+        private EstadosCuenta _Estados;
+        [Association("EstadosCuenta-Cuenta")]
+
+        [XafDisplayName("EstadosCuenta")]
+        public EstadosCuenta Estados
+        {
+            get { return _Estados; }
+            set { SetPropertyValue(nameof(Estados), ref _Estados, value); }
         }
 
         //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]

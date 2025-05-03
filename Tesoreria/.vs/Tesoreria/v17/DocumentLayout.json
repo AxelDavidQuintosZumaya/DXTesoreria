@@ -3,37 +3,49 @@
   "WorkspaceRootPath": "C:\\Users\\aquintos\\source\\repos\\Tesoreria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\controllers\\botondatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}|..\\Tesoreria.Blazor.Server\\Tesoreria.Blazor.Server.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\estadoscuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\comites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\clabe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\cuentaextrena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\bancos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\concepto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\emisorproveedorbeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\ingresodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}|..\\Tesoreria.Blazor.Server\\Tesoreria.Blazor.Server.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\comites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\cuentacuentaclabelineacap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDC1C954-7CE2-4C30-BFB5-06C9FE20639D}|..\\Tesoreria.Blazor.Server\\Tesoreria.Blazor.Server.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\corte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\tipooperacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\tipomovimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\controllers\\cortesviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -42,19 +54,7 @@
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\tesoreria.module.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\areas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\emisorproveedorbeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\bancos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B5E145-C03B-4BBB-875F-1732D3473B8B}|..\\Tesoreria.Module\\Tesoreria.Module.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.module\\businessobjects\\cuentacuentaclabelineacap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCA3B238-A132-43D4-B7BB-8ABF07DE3B91}|..\\Tesoreria.Win\\Tesoreria.Win.csproj|c:\\users\\aquintos\\source\\repos\\tesoreria.win\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -67,20 +67,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Datos.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
               "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
               "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Datos.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAUwGkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAADIzMzPTv5QAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T22:00:00.769Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -88,67 +89,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BotonDatos.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Controllers\\BotonDatos.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\Controllers\\BotonDatos.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Controllers\\BotonDatos.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\Controllers\\BotonDatos.cs",
-              "ViewState": "AgIAACIAAABAmJmZmdkgwFoAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EstadosCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EstadosCuenta.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\EstadosCuenta.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EstadosCuenta.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\EstadosCuenta.cs",
+              "ViewState": "AgIAACgAAACAZmZmZmYnwBIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:44:37.509Z",
+              "WhenOpened": "2025-05-02T23:59:57.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Corte.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Corte.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Corte.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Corte.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Corte.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Clabe.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Clabe.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Clabe.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Clabe.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Clabe.cs",
+              "ViewState": "AgIAACsAAAAA0MzMzMwBwC4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T23:41:37.337Z"
+              "WhenOpened": "2025-05-02T22:08:20.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "CuentaExtrena.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaExtrena.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\CuentaExtrena.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaExtrena.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\CuentaExtrena.cs",
+              "ViewState": "AgIAAB0AAAAAoJmZmZkMwC8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T19:39:54.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Cuentas.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Cuentas.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Cuentas.cs",
               "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Cuentas.cs",
               "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Cuentas.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKwAAAAACwAAAIAXwL4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:10:46.316Z"
+              "WhenOpened": "2025-04-03T19:10:46.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Blazor.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Program.cs",
-              "RelativeToolTip": "..\\Tesoreria.Blazor.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
+              "Title": "Bancos.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
+              "ViewState": "AgIAAFUAAAAAZmZmZmYswBcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T00:54:46.443Z"
+              "WhenOpened": "2025-04-04T23:05:43.833Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Model.xafml",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Model.xafml",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Blazor.Server\\Model.xafml",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Model.xafml",
-              "RelativeToolTip": "..\\Tesoreria.Blazor.Server\\Model.xafml",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVDhPrVTLbxtFHP5mH17bazt2nNhNk7QlaYSjSn2IAkIVXFohEBL/QA8gzj3DBfWKCioSUo8gDkgcUIEWJESJRCFt2ibpI2nSlrSO07iOvY7f9WPXszszjNOHVOXaT5qdXWn2m2\u002B\u002B3/cbvFQIIZ6\u002BvTyQp/M2nDgxEXp1PDAK1k2BdydAlBaUwB2o\u002BspKurl55swqf7r0BbxAODYY1o6kkqYY8JKfnty1f9\u002Bkfoi49iEwJyUJm9DMRS788zeW7FuffbW2QgOi\u002BeBqtVvKdJ4flaQSJgEhfgiYHx4cjX9x/LUxtr/9BhkqfEDMdooQHiLSmp4czyWwW3o\u002B3w5eue2Pnm3vEJmzJ1cKC\u002BeLDdfhdiVrM9I4dcwntMAhuO5R3bXf9oOmWB\u002BNib22n\u002ByFrg4RQnwE3TqQW2dYrXt8PSA/XzFqxNTzGjMvaV7w79xC6/qX710pEvH10W8EpQfheSNgblQWyhQKNAQ8wuOUeEmKx0kFdxsUjyIEtZgCO6xyZoARQaiiaDVd9W2wjnYnd53\u002BReqfv54Najyhqj0dYqvynFI0pC2WFkIxOYLy\u002BB5kyCbs0fsgQyXoYQZV1QHec0ta0QV1SqRYT6vT6iepvtOKAlWRD0/61HIBq6vjnhjBon4Yt81jSJtHUfKNg\u002BqGrCKHIqgstgdFIaBNoLrmqrkbjpqZaXnk6vEUC/mAaFglTNWQpSaW9ElkRt9FbedboJEREFnD3lB5BbpvHv7IFMI7ZqDpdRSXHWRnXWyusAbx1Dky\u002B9G\u002BtspcQ\u002BpW1n3DmNv5PkqHPwZCUanGAJgmO2ArEZKVyfRQCJaF2/lTxvN7FBYs1HNSLdErfZHYlJyNMuPCZZyjyxXUqIpyrYNum4JwASn6yZDchHhoFgrI3VjGo2sZNC0XtCOtZFx6SuhgLJFT/PHEr4oReCjDYSvcheI0YZcttAtZ2NWibJS2VOVJr0qopm/CWvgHpbuz6FTy8GwXXG6qa0YlGokvDA0MX1LfnNyT7/NrQV144RbXQnkyaBSCo3JxC9yjve3BXVuSLcJauoxq5o48bgnmgC2McJFxG5bfiM1GpDBR1S6o525miu8cSC0ORU3ucJLYYH2D\u002BWhK7UWIu5Q49TJq6/eQm5\u002BSivNbx9P8Cjfjtuc3q7UQ\u002Bs8bAzu\u002BrYCdP3fqgqP2vJ7LWM7oYCwzNjF514qMt9dI8oCQ/8koESFV9oicWqGXUgiZPV1X63t2DVzbNWyeXr64/vP8byv3ctc3XLfjYouw6bjCajr2rWylvGw1rP7UERlwDMgR4p6ruO06Oo2iJGPw6VohEY9NT\u002Bwe\u002BW72wszMg4VHG49LbadH1sMWYQ/WY1ukrUq3VK1WDMNvxeMJ7gsEA13qhrutmuE0NpkZ8N\u002BP9oemDEP8UsmsXpz/d77arLV6/fAczwmfwaOOV/hvLjc8svthJJ70hKJGnXY9CKeRD6rsrO7zfiyX16cv/37OcWl32w29jfAZ1pauVsP98ftjkwdzOqPaQFD5YenyHz/dnp5asdLpbURPAPwPRwFkXZLSwpoAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-04-23T00:31:50.885Z"
+              "DocumentIndex": 7,
+              "Title": "Concepto.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Concepto.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Concepto.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Concepto.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Concepto.cs",
+              "ViewState": "AgIAAA0AAACg//////8QwBIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T21:06:26.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
+              "Title": "CuentaCuentaClabeLineaCap.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
+              "ViewState": "AgIAABsAAACA/f////8CwDkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T23:30:34.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Status.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Status.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Status.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Status.cs",
+              "ViewState": "AgIAACAAAAAAZmZmZmYJwC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T18:00:35.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmisorProveedorBeneficiario.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
+              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
+              "ViewState": "AgIAAB8AAADAzMzMzAwtwCwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T21:37:10.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "TipoOperacion.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoOperacion.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\TipoOperacion.cs",
@@ -160,79 +218,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Usuarios.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T17:17:32.831Z"
+              "DocumentIndex": 10,
+              "Title": "Model.xafml",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Model.xafml",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Blazor.Server\\Model.xafml",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Model.xafml",
+              "RelativeToolTip": "..\\Tesoreria.Blazor.Server\\Model.xafml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVDhPrVTLbxtFHP5mH17bazt2nNhNk7QlaYSjSn2IAkIVXFohEBL/QA8gzj3DBfWKCioSUo8gDkgcUIEWJESJRCFt2ibpI2nSlrSO07iOvY7f9WPXszszjNOHVOXaT5qdXWn2m2\u002B\u002B3/cbvFQIIZ6\u002BvTyQp/M2nDgxEXp1PDAK1k2BdydAlBaUwB2o\u002BspKurl55swqf7r0BbxAODYY1o6kkqYY8JKfnty1f9\u002Bkfoi49iEwJyUJm9DMRS788zeW7FuffbW2QgOi\u002BeBqtVvKdJ4flaQSJgEhfgiYHx4cjX9x/LUxtr/9BhkqfEDMdooQHiLSmp4czyWwW3o\u002B3w5eue2Pnm3vEJmzJ1cKC\u002BeLDdfhdiVrM9I4dcwntMAhuO5R3bXf9oOmWB\u002BNib22n\u002ByFrg4RQnwE3TqQW2dYrXt8PSA/XzFqxNTzGjMvaV7w79xC6/qX710pEvH10W8EpQfheSNgblQWyhQKNAQ8wuOUeEmKx0kFdxsUjyIEtZgCO6xyZoARQaiiaDVd9W2wjnYnd53\u002BReqfv54Najyhqj0dYqvynFI0pC2WFkIxOYLy\u002BB5kyCbs0fsgQyXoYQZV1QHec0ta0QV1SqRYT6vT6iepvtOKAlWRD0/61HIBq6vjnhjBon4Yt81jSJtHUfKNg\u002BqGrCKHIqgstgdFIaBNoLrmqrkbjpqZaXnk6vEUC/mAaFglTNWQpSaW9ElkRt9FbedboJEREFnD3lB5BbpvHv7IFMI7ZqDpdRSXHWRnXWyusAbx1Dky\u002B9G\u002BtspcQ\u002BpW1n3DmNv5PkqHPwZCUanGAJgmO2ArEZKVyfRQCJaF2/lTxvN7FBYs1HNSLdErfZHYlJyNMuPCZZyjyxXUqIpyrYNum4JwASn6yZDchHhoFgrI3VjGo2sZNC0XtCOtZFx6SuhgLJFT/PHEr4oReCjDYSvcheI0YZcttAtZ2NWibJS2VOVJr0qopm/CWvgHpbuz6FTy8GwXXG6qa0YlGokvDA0MX1LfnNyT7/NrQV144RbXQnkyaBSCo3JxC9yjve3BXVuSLcJauoxq5o48bgnmgC2McJFxG5bfiM1GpDBR1S6o525miu8cSC0ORU3ucJLYYH2D\u002BWhK7UWIu5Q49TJq6/eQm5\u002BSivNbx9P8Cjfjtuc3q7UQ\u002Bs8bAzu\u002BrYCdP3fqgqP2vJ7LWM7oYCwzNjF514qMt9dI8oCQ/8koESFV9oicWqGXUgiZPV1X63t2DVzbNWyeXr64/vP8byv3ctc3XLfjYouw6bjCajr2rWylvGw1rP7UERlwDMgR4p6ruO06Oo2iJGPw6VohEY9NT\u002Bwe\u002BW72wszMg4VHG49LbadH1sMWYQ/WY1ukrUq3VK1WDMNvxeMJ7gsEA13qhrutmuE0NpkZ8N\u002BP9oemDEP8UsmsXpz/d77arLV6/fAczwmfwaOOV/hvLjc8svthJJ70hKJGnXY9CKeRD6rsrO7zfiyX16cv/37OcWl32w29jfAZ1pauVsP98ftjkwdzOqPaQFD5YenyHz/dnp5asdLpbURPAPwPRwFkXZLSwpoAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-23T00:31:50.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IngresoDatos.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\IngresoDatos.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\IngresoDatos.cs",
               "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\IngresoDatos.cs",
               "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\IngresoDatos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAABgAAAAD8vwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T01:00:00.163Z"
+              "WhenOpened": "2025-04-04T01:00:00.163Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Comites.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
               "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
               "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Comites.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAA1P/////XvzMAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T18:33:47.89Z"
+              "WhenOpened": "2025-03-27T18:33:47.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TipoMovimiento.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoMovimiento.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\TipoMovimiento.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\TipoMovimiento.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\TipoMovimiento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Tesoreria.Blazor.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Blazor.Server\\Program.cs",
+              "RelativeToolTip": "..\\Tesoreria.Blazor.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:00:27.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CuentaCuentaClabeLineaCap.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\CuentaCuentaClabeLineaCap.cs",
-              "ViewState": "AgIAAAcAAAAAVDMzMzPbvxIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T23:30:34.429Z"
+              "WhenOpened": "2025-04-04T00:54:46.443Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "EmisorProveedorBeneficiario.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\EmisorProveedorBeneficiario.cs",
-              "ViewState": "AgIAABcAAADgMjMzM3MtwCoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:41:25.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "CortesViewController.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Controllers\\CortesViewController.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\Controllers\\CortesViewController.cs",
@@ -244,19 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Status.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Status.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Status.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Status.cs",
-              "ViewState": "AgIAACAAAAAAZmZmZmYJwC4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T18:00:35.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Tesoreria.Module.csproj",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\Tesoreria.Module.csproj",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\Tesoreria.Module.csproj",
@@ -268,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Areas.cs",
               "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Areas.cs",
               "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Areas.cs",
@@ -277,18 +300,6 @@
               "ViewState": "AgIAAB4AAAAAAAAAAADwvzEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T17:58:09.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Bancos.cs",
-              "DocumentMoniker": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
-              "RelativeDocumentMoniker": "..\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
-              "ToolTip": "C:\\Users\\aquintos\\source\\repos\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
-              "RelativeToolTip": "..\\Tesoreria.Module\\BusinessObjects\\Bancos.cs",
-              "ViewState": "AgIAACAAAABAmpmZmdklwD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T23:05:43.833Z"
             },
             {
               "$type": "Document",

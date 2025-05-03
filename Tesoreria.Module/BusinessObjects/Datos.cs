@@ -7,6 +7,7 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
+using DevExpress.XtraSpreadsheet.Model.NumberFormatting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,16 +60,25 @@ namespace Tesoreria.Module.BusinessObjects
                 {
                     this.Comites = Cuenta.Comites != null ? Cuenta.Comites : Comites;
                     this.BancoRegistros = Cuenta.Bancos != null ? Cuenta.Bancos : BancoRegistros;
-                    this.NombreCtaRegistro = Cuenta.Titular != null ? Cuenta.Titular : NombreCtaRegistro;
+                    this.NombreCtaRegistro = Cuenta.User != null ? Cuenta.User.NombreCompleto : NombreCtaRegistro;
+                    this.Banco = Cuenta.Estados != null ? Cuenta.Estados.Estado : Banco;
                 }
             }
-            
+
             if (propertyName == "EmisorProveedorBeneficiarios")
             {
                 if(EmisorProveedorBeneficiarios != null)
                 {
                     this.BancoReceptorS = EmisorProveedorBeneficiarios.BancoReceptor != null ? EmisorProveedorBeneficiarios.BancoReceptor : BancoReceptorS;
-                    this.CuentaCuentaClabeLineaCap = EmisorProveedorBeneficiarios.CuentaCuentaClabeLineaCap != null ? EmisorProveedorBeneficiarios.CuentaCuentaClabeLineaCap.Numero : CuentaCuentaClabeLineaCap;
+                    this.CuentaExterna = EmisorProveedorBeneficiarios.CuentaExterna != null ? EmisorProveedorBeneficiarios.CuentaExterna : CuentaExterna;
+                    this.Clabe = EmisorProveedorBeneficiarios.Clabe != null ? EmisorProveedorBeneficiarios.Clabe : Clabe;
+                    
+                    //if(EmisorProveedorBeneficiarios.Clabe.Numeros != null)
+                    //{
+                    //    this.Clabe = EmisorProveedorBeneficiarios.Clabe.Numeros != null ? EmisorProveedorBeneficiarios.Clabe.Numeros : Clabe;
+                    //}
+                    
+
                 }
             }
 
@@ -84,7 +94,7 @@ namespace Tesoreria.Module.BusinessObjects
             }
             else
             {
-                this.Concatenar = TipoMovimientosE.Nombre + " " + Comites + " " + MesNumerico;
+                this.Concatenar = Comites + " " + TipoMovimientosE.Nombre + " " + MesNumerico;
             }
         }
 
@@ -121,6 +131,34 @@ namespace Tesoreria.Module.BusinessObjects
             Corte.Fecha = this.FechaOperacion;
             Corte.Cuenta = this.Cuenta;
             Corte.Monto = ImporteAbono != 0 ? ImporteAbono : -ImporteCargo;
+
+            if (!string.IsNullOrWhiteSpace(FolioIdentificadorOficio))
+            {
+                var duplicado = Session.Query<Datos>()
+                    .Where(x => x.FolioIdentificadorOficio == this.FolioIdentificadorOficio && x.Oid != this.Oid)
+                    .FirstOrDefault();
+
+                if (duplicado != null)
+                {
+                    throw new UserFriendlyException("Ya existe un registro con el mismo Folio Identificador de Oficio.");
+                }
+            }
+
+            if (!string.Equals(Banco, "ACTIVA", StringComparison.OrdinalIgnoreCase))
+            {
+                throw new UserFriendlyException("Cuenta no activa.");
+            }
+        }
+
+    protected override void OnDeleting()
+        {
+            // Eliminar el Corte asociado si existe
+            if (Corte != null && !Corte.IsDeleted)
+            {
+                Corte.Delete();
+            }
+
+            base.OnDeleting();
         }
 
         private Corte _Corte;
@@ -255,6 +293,7 @@ namespace Tesoreria.Module.BusinessObjects
         }
 
         private Bancos _BancoRegistros;
+        [DataSourceCriteria("CuentaPartido = true")]
         [Association("BancoRegistro-Datos")]
 
         [XafDisplayName("BancoRegistro")]
@@ -294,14 +333,34 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(BancoReceptorS), ref _BancoReceptorS, value); }
         }
 
-        private string _CuentaCuentaClabeLineaCap;
-        [XafDisplayName("Cuenta/Clabe/Linea Cap"), ToolTip("My hint message")]
-        [Persistent("CuentaCuentaClabeLineaCap")]
-        public string CuentaCuentaClabeLineaCap
+        private CuentaExtrena _CuentaExterna;
+        [Association("CuentaExterna-Datos")]
+
+        [XafDisplayName("CuentaExterna")]
+        public CuentaExtrena CuentaExterna
         {
-            get { return _CuentaCuentaClabeLineaCap; }
-            set { SetPropertyValue(nameof(CuentaCuentaClabeLineaCap), ref _CuentaCuentaClabeLineaCap, value); }
+            get { return _CuentaExterna; }
+            set { SetPropertyValue(nameof(CuentaExterna), ref _CuentaExterna, value); }
         }
+
+        private Clabe _Clabe;
+        [Association("Clabe-Datos")]
+
+        [XafDisplayName("Clabe")]
+        public Clabe Clabe
+        {
+            get { return _Clabe; }
+            set { SetPropertyValue(nameof(Clabe), ref _Clabe, value); }
+        }
+
+        //private string _CuentaCuentaClabeLineaCap;
+        //[XafDisplayName("Cuenta/Clabe/Linea Cap"), ToolTip("My hint message")]
+        //[Persistent("CuentaCuentaClabeLineaCap")]
+        //public string CuentaCuentaClabeLineaCap
+        //{
+        //    get { return _CuentaCuentaClabeLineaCap; }
+        //    set { SetPropertyValue(nameof(CuentaCuentaClabeLineaCap), ref _CuentaCuentaClabeLineaCap, value); }
+        //}
 
         private string _FolioInterno;
 
@@ -364,15 +423,25 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(NoFacturaDocumentoComprobatorio), ref _NoFacturaDocumentoComprobatorio, value); }
         }
 
-        private string _ConceptoPagoGasto;
-        [XafDisplayName("Concepto Pago/Gasto"), ToolTip("My hint message")]
-        [Size (SizeAttribute.Unlimited)]
-        [Persistent("ConceptoPagoGasto")]
-        public string ConceptoPagoGasto
+        private Concepto _Concepto;
+        [Association("Concepto-Datos")]
+
+        [XafDisplayName("Concepto")]
+        public Concepto Concepto
         {
-            get { return _ConceptoPagoGasto; }
-            set { SetPropertyValue(nameof(ConceptoPagoGasto), ref _ConceptoPagoGasto, value); }
+            get { return _Concepto; }
+            set { SetPropertyValue(nameof(Concepto), ref _Concepto, value); }
         }
+
+        //private string _ConceptoPagoGasto;
+        //[XafDisplayName("Concepto Pago/Gasto"), ToolTip("My hint message")]
+        //[Size (SizeAttribute.Unlimited)]
+        //[Persistent("ConceptoPagoGasto")]
+        //public string ConceptoPagoGasto
+        //{
+        //    get { return _ConceptoPagoGasto; }
+        //    set { SetPropertyValue(nameof(ConceptoPagoGasto), ref _ConceptoPagoGasto, value); }
+        //}
 
         private string _ConceptoPortal;
         [XafDisplayName("Concepto Portal"), ToolTip("My hint message")]

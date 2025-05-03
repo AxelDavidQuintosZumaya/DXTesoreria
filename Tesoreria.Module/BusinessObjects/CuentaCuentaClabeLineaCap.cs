@@ -51,11 +51,11 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(Numero), ref _Numero, value); }
         }
 
-        [Association("CuentaCuentaClabeLineaCap-EmisorProveedorBeneficiario")]
-        public XPCollection<EmisorProveedorBeneficiario> EmisorProveedorBenefisiarios
-        {
-            get { return GetCollection<EmisorProveedorBeneficiario>("EmisorProveedorBenefisiarios"); }
-        }
+        //[Association("CuentaCuentaClabeLineaCap-EmisorProveedorBeneficiario")]
+        //public XPCollection<EmisorProveedorBeneficiario> EmisorProveedorBenefisiarios
+        //{
+        //    get { return GetCollection<EmisorProveedorBeneficiario>("EmisorProveedorBenefisiarios"); }
+        //}
 
         //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
         //public void ActionMethod() {

@@ -16,7 +16,7 @@ namespace Tesoreria.Module.BusinessObjects
 {
     [DefaultClassOptions]
     //[ImageName("BO_Contact")]
-    //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
+    //[DefaultProperty("CuentaExterna")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
@@ -52,14 +52,24 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(BancoReceptor), ref _BancoReceptor, value); }
         }
 
-        private CuentaCuentaClabeLineaCap _CuentaCuentaClabeLineaCap;
-        [Association("CuentaCuentaClabeLineaCap-EmisorProveedorBeneficiario")]
+        private CuentaExtrena _CuentaExterna;
+        [Association("CuentaExterna-EmisorProveedorBeneficiario")]
 
-        [XafDisplayName("CuentaCuentaClabeLineaCap")]
-        public CuentaCuentaClabeLineaCap CuentaCuentaClabeLineaCap
+        [XafDisplayName("CuentaExterna")]
+        public CuentaExtrena CuentaExterna
         {
-            get { return _CuentaCuentaClabeLineaCap; }
-            set { SetPropertyValue(nameof(CuentaCuentaClabeLineaCap), ref _CuentaCuentaClabeLineaCap, value); }
+            get { return _CuentaExterna; }
+            set { SetPropertyValue(nameof(CuentaExterna), ref _CuentaExterna, value); }
+        }
+        
+        private Clabe _Clabe;
+        [Association("Clabe-EmisorProveedorBeneficiario")]
+
+        [XafDisplayName("Clabe")]
+        public Clabe Clabe
+        {
+            get { return _Clabe; }
+            set { SetPropertyValue(nameof(Clabe), ref _Clabe, value); }
         }
 
         [Association("EmisorProveedorBeneficiario-Datos")]
