@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Datos_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="Datos">
+                <LayoutGroup Id="Autod3b99089-4814-49e2-95bb-a1b57ee33d81">
+                  <LayoutGroup Id="Auto472c8e07-643d-42bb-a38f-ad0defe99b4a">
+                    <LayoutGroup Id="Item9">
+                      <LayoutItem Id="ConceptoPagoGasto" ViewItem="ConceptoPagoGasto" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item8">
+                      <LayoutItem Id="Cuentas" ViewItem="Cuentas" />
+                      <LayoutItem Id="Clabe" ViewItem="Clabe" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item5">
+                      <LayoutItem Id="TipoMovimientosS" ViewItem="TipoMovimientosS" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

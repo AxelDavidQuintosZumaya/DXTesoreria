@@ -28,6 +28,7 @@
     <EmbeddedResource Include="Images\ExpressAppLogo.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
     <PackageReference Include="DevExpress.ExpressApp" Version="23.1.4" />
     <PackageReference Include="DevExpress.ExpressApp.Chart.Win" Version="23.1.4" />
     <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.1.4" />
@@ -50,6 +51,10 @@
     <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="23.1.4" />
     <PackageReference Include="DevExpress.RichEdit.Export" Version="23.1.4" />
     <PackageReference Include="DevExpress.Win.Design" Version="23.1.4" />
+    <PackageReference Include="ExcelDataReader" Version="3.7.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.7.0" />
+    <PackageReference Include="ExcelDataWriter" Version="1.0.0" />
+    <PackageReference Include="ExcelPackage" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tesoreria.Module\Tesoreria.Module.csproj" />

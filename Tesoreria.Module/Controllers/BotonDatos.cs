@@ -91,55 +91,7 @@ namespace Tesoreria.Module.Controllers
             e.ShowViewParameters.CreateAllControllers = true;
 
 
-        //    private void CloneAction_Execute(object sender, SimpleActionExecuteEventArgs e)
-        //    {
-        //        IObjectSpace objectSpace = Application.CreateObjectSpace();
-
-        //        Tesoreria.Module.BusinessObjects.Datos datos = (BusinessObjects.Datos)e.CurrentObject;
-        //        Datos datos1 = objectSpace.FindObject<Datos>(CriteriaOperator.Parse("[Oid]='" + datos.Oid + "'"));
-
-        //        var datosActual = View.CurrentObject as Datos;
-        //        if (datosActual == null) return;
-
-
-        //        var nuevoDatos = objectSpace.CreateObject<Datos>();
-        //        Session session = ((XPObjectSpace)this.ObjectSpace).Session;
-
-        //        nuevoDatos.Corte = datos1.Corte;
-        //        nuevoDatos.User = datos1.User;
-        //        nuevoDatos.Comites = datos1.Comites;
-        //        //nuevoDatos.FechaOperacion = datos1.FechaOperacion;
-        //        nuevoDatos.Mes = datos1.Mes;
-        //        nuevoDatos.MesNumerico = datos1.MesNumerico;
-        //        nuevoDatos.TipoOperacion = datos1.TipoOperacion;
-        //        nuevoDatos.TipoMovimientosE = datos1.TipoMovimientosE;
-        //        nuevoDatos.Cuenta = datos1.Cuenta;
-        //        nuevoDatos.BancoRegistros = datos1.BancoRegistros;
-        //        nuevoDatos.NombreCtaRegistro = datos1.NombreCtaRegistro;
-        //        nuevoDatos.EmisorProveedorBeneficiarios = datos1.EmisorProveedorBeneficiarios;
-        //        nuevoDatos.BancoReceptorS = datos1.BancoReceptorS;
-        //        nuevoDatos.CuentaCuentaClabeLineaCap = datos1.CuentaCuentaClabeLineaCap;
-        //        nuevoDatos.FolioInterno = datos1.FolioInterno;
-        //        nuevoDatos.FolioIdentificadorOficio = datos1.FolioIdentificadorOficio;
-        //        nuevoDatos.FechaOficio = datos1.FechaOficio;
-        //        nuevoDatos.FolioFiscal = datos1.FolioFiscal;
-        //        nuevoDatos.NoFacturaDocumentoComprobatorio = datos1.NoFacturaDocumentoComprobatorio;
-        //        nuevoDatos.ConceptoPagoGasto = datos1.ConceptoPagoGasto;
-        //        nuevoDatos.ConceptoPortal = datos1.ConceptoPortal;
-        //        nuevoDatos.ClaveRastreoReferencia = datos1.ClaveRastreoReferencia;
-        //        nuevoDatos.ImporteCargo = datos1.ImporteCargo;
-        //        nuevoDatos.ImporteAbono = datos1.ImporteAbono;
-        //        nuevoDatos.Area = datos1.Area;
-        //        nuevoDatos.Status = datos1.Status;
-        //        nuevoDatos.Observaciones = datos1.Observaciones;
-        //        nuevoDatos.Banco = datos1.Banco;
-        //        nuevoDatos.TipoGasto = datos1.TipoGasto;
-        //        nuevoDatos.Nomenclatura = datos1.Nomenclatura;
-        //        nuevoDatos.NombreAlias = datos1.NombreAlias;
-        //        nuevoDatos.Concatenar = datos1.Concatenar;
-
-        //        nuevoDatos.Save();
-        //        objectSpace.CommitChanges();
+        
 
         Application.ShowViewStrategy.ShowMessage(new MessageOptions
                 {

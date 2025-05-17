@@ -16,7 +16,7 @@ namespace Tesoreria.Module.BusinessObjects
 {
     [DefaultClassOptions]
     //[ImageName("BO_Contact")]
-    [DefaultProperty("Numero")]
+    [DefaultProperty("Cuenta")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
@@ -189,6 +189,15 @@ namespace Tesoreria.Module.BusinessObjects
         {
             get { return _Estados; }
             set { SetPropertyValue(nameof(Estados), ref _Estados, value); }
+        }
+
+        private string _Clabes;
+        [XafDisplayName("Clabe"), ToolTip("My hint message")]
+        [Persistent("Clabes"), RuleRequiredField(DefaultContexts.Save)]
+        public string Clabes
+        {
+            get { return _Clabes; }
+            set { SetPropertyValue(nameof(Clabes), ref _Clabes, value); }
         }
 
         //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]

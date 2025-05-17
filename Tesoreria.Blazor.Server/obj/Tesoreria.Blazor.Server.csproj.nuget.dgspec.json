@@ -74,6 +74,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.2, )"
+            },
             "DevExpress.ExpressApp.Blazor": {
               "target": "Package",
               "version": "[23.1.4, )"
@@ -109,6 +113,22 @@
             "DevExpress.ExpressApp.Validation.Blazor": {
               "target": "Package",
               "version": "[23.1.4, )"
+            },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "ExcelDataWriter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "ExcelPackage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -200,6 +220,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.2, )"
+            },
             "DevExpress.ExpressApp": {
               "target": "Package",
               "version": "[23.1.4, )"
@@ -295,6 +319,22 @@
             "DevExpress.Persistent.BaseImpl.Xpo": {
               "target": "Package",
               "version": "[23.1.4, )"
+            },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "ExcelDataWriter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "ExcelPackage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

@@ -82,6 +82,15 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(Numeros), ref _Numeros, value); }
         }
 
+        private string _Clabes;
+        [XafDisplayName("Clabe"), ToolTip("My hint message")]
+        [Persistent("Clabes"), RuleRequiredField(DefaultContexts.Save)]
+        public string Clabes
+        {
+            get { return _Clabes; }
+            set { SetPropertyValue(nameof(Clabes), ref _Clabes, value); }
+        }
+
         [Association("CuentaExterna-EmisorProveedorBeneficiario")]
         public XPCollection<EmisorProveedorBeneficiario> EmisorProveedorBenefisiarios
         {

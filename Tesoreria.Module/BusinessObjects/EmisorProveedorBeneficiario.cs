@@ -61,16 +61,18 @@ namespace Tesoreria.Module.BusinessObjects
             get { return _CuentaExterna; }
             set { SetPropertyValue(nameof(CuentaExterna), ref _CuentaExterna, value); }
         }
-        
-        private Clabe _Clabe;
-        [Association("Clabe-EmisorProveedorBeneficiario")]
 
-        [XafDisplayName("Clabe")]
-        public Clabe Clabe
+        private string _ClabeProveedor;
+        [XafDisplayName("Clabe del proveedor"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
+        [Persistent("ClabeProveedor")]
+        public string ClabeProveedor
         {
-            get { return _Clabe; }
-            set { SetPropertyValue(nameof(Clabe), ref _Clabe, value); }
+            get { return _ClabeProveedor; }
+            set { SetPropertyValue(nameof(ClabeProveedor), ref _ClabeProveedor, value); }
         }
+
+
 
         [Association("EmisorProveedorBeneficiario-Datos")]
         public XPCollection<Datos> Datos

@@ -34,6 +34,11 @@ namespace Tesoreria.Module.BusinessObjects
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
+        internal static string ToUpper()
+        {
+            throw new NotImplementedException();
+        }
+
         private string _Nombre;
         [XafDisplayName("Nombre"), ToolTip("My hint message")]
         [Persistent("Nombre"), RuleRequiredField(DefaultContexts.Save)]

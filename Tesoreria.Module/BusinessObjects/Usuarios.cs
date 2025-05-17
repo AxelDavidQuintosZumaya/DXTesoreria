@@ -41,7 +41,15 @@ namespace Tesoreria.Module.BusinessObjects
             this.NombreCompleto = Nombre + " " + APaterno + " " + AMaterno;
         }
 
+        internal static string ToUpper()
+        {
+            throw new NotImplementedException();
+        }
 
+        //internal static string ToUpper()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         private string _Nombre;
         [XafDisplayName("Nombre"), ToolTip("Nombre del empleado")]

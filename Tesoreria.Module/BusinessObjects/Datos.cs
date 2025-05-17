@@ -60,8 +60,10 @@ namespace Tesoreria.Module.BusinessObjects
                 {
                     this.Comites = Cuenta.Comites != null ? Cuenta.Comites : Comites;
                     this.BancoRegistros = Cuenta.Bancos != null ? Cuenta.Bancos : BancoRegistros;
-                    this.NombreCtaRegistro = Cuenta.User != null ? Cuenta.User.NombreCompleto : NombreCtaRegistro;
+                    this.NombreCtaRegistro = Cuenta.Nombre != null ? Cuenta.Nombre : NombreCtaRegistro;
                     this.Banco = Cuenta.Estados != null ? Cuenta.Estados.Estado : Banco;
+                    this.Clabes = Cuenta.Clabes != null ? Cuenta.Clabes : Clabes;
+                    this.NombreAlias = Cuenta.Nombre != null ? Cuenta.Nombre : NombreAlias;
                 }
             }
 
@@ -71,7 +73,8 @@ namespace Tesoreria.Module.BusinessObjects
                 {
                     this.BancoReceptorS = EmisorProveedorBeneficiarios.BancoReceptor != null ? EmisorProveedorBeneficiarios.BancoReceptor : BancoReceptorS;
                     this.CuentaExterna = EmisorProveedorBeneficiarios.CuentaExterna != null ? EmisorProveedorBeneficiarios.CuentaExterna : CuentaExterna;
-                    this.Clabe = EmisorProveedorBeneficiarios.Clabe != null ? EmisorProveedorBeneficiarios.Clabe : Clabe;
+                    this.ClabeProveedor = EmisorProveedorBeneficiarios.CuentaExterna.Clabes != null ? EmisorProveedorBeneficiarios.CuentaExterna.Clabes : Clabes;
+                    //this.Clabes = EmisorProveedorBeneficiarios.CuentaExterna.Clabes != null ? EmisorProveedorBeneficiarios.CuentaExterna.Clabes : Clabes;
                     
                     //if(EmisorProveedorBeneficiarios.Clabe.Numeros != null)
                     //{
@@ -95,6 +98,16 @@ namespace Tesoreria.Module.BusinessObjects
             else
             {
                 this.Concatenar = Comites + " " + TipoMovimientosE.Nombre + " " + MesNumerico;
+            }
+
+            if (propertyName == nameof(TipoMovimientosE) || propertyName == nameof(Cuenta))
+            {
+                ActualizarTipoGasto();
+            }
+
+            if (propertyName == nameof(Cuenta))
+            {
+                ActualizarNomenclatura();
             }
         }
 
@@ -135,7 +148,9 @@ namespace Tesoreria.Module.BusinessObjects
             if (!string.IsNullOrWhiteSpace(FolioIdentificadorOficio))
             {
                 var duplicado = Session.Query<Datos>()
-                    .Where(x => x.FolioIdentificadorOficio == this.FolioIdentificadorOficio && x.Oid != this.Oid)
+                    .Where(x => x.FolioIdentificadorOficio == this.FolioIdentificadorOficio
+                                && x.Oid != this.Oid
+                                ) // Solo registros activos
                     .FirstOrDefault();
 
                 if (duplicado != null)
@@ -143,6 +158,7 @@ namespace Tesoreria.Module.BusinessObjects
                     throw new UserFriendlyException("Ya existe un registro con el mismo Folio Identificador de Oficio.");
                 }
             }
+
 
             if (!string.Equals(Banco, "ACTIVA", StringComparison.OrdinalIgnoreCase))
             {
@@ -169,6 +185,40 @@ namespace Tesoreria.Module.BusinessObjects
             set => SetPropertyValue(nameof(Corte), ref _Corte, value);
         }
 
+        private void ActualizarTipoGasto()
+        {
+            if (TipoMovimientosE != null && TipoMovimientosE.Nombre == "Pago Proveedor ")
+            {
+                if (Cuenta != null)
+                {
+                    TipoGasto = Cuenta.TipoCuenta == Cuentas.TipoCuentaEnum.GastoProgramado
+                        ? "Gasto Programado"
+                        : "Ordinario";
+                }
+                else
+                {
+                    TipoGasto = "Ordinario";
+                }
+            }
+            else
+            {
+                TipoGasto = "Ordinario";
+            }
+        }
+
+        private void ActualizarNomenclatura()
+        {
+            if (Cuenta != null)
+            {
+                Nomenclatura = Cuenta.TipoCuenta == Cuentas.TipoCuentaEnum.GastoProgramado
+                    ? "Gasto Programado"
+                    : "Ordinario";
+            }
+            else
+            {
+                Nomenclatura = null;
+            }
+        }
 
 
         private Usuarios _User;
@@ -239,29 +289,13 @@ namespace Tesoreria.Module.BusinessObjects
         [RuleRequiredField(DefaultContexts.Save)]
         [Association("Ingreso / Egreso-Datos")]
         [XafDisplayName("Ingreso / Egreso")]
+
         public TipoOperacion TipoOperacion
         {
             get => _TipoOperacion;
-            set
-            {
-                if (SetPropertyValue(nameof(TipoOperacion), ref _TipoOperacion, value))
-                {
-                    if (value?.Nombre == "INGRESO")
-                    {
-                       ImporteCargo  = 0;
-                    }
-                    else if (value?.Nombre == "EGRESO")
-                    {
-                        ImporteAbono = 0;
-                    }
-                    else
-                    {
-                        ImporteAbono = 0;
-                        ImporteCargo = 0;
-                    }
-                }
-            }
+            set => SetPropertyValue(nameof(TipoOperacion), ref _TipoOperacion, value);
         }
+
         //private TipoOperacion _TipoOperacion;
         //[Association("Ingreso / Egreso-Datos")]
 
@@ -294,6 +328,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private Bancos _BancoRegistros;
         [DataSourceCriteria("CuentaPartido = true")]
+        [ModelDefault("AllowEdit", "False")]
         [Association("BancoRegistro-Datos")]
 
         [XafDisplayName("BancoRegistro")]
@@ -306,6 +341,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private string _NombreCtaRegistro;
         [XafDisplayName("Nombre Cta Registro"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
         [Persistent("NombreCtaRegistro")]
         public string NombreCtaRegistro
         {
@@ -325,7 +361,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private Bancos _BancoReceptorS;
         [Association("BancoReceptor-Datos")]
-
+        [ModelDefault("AllowEdit", "False")]
         [XafDisplayName("BancoReceptor")]
         public Bancos BancoReceptorS
         {
@@ -335,6 +371,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private CuentaExtrena _CuentaExterna;
         [Association("CuentaExterna-Datos")]
+        [ModelDefault("AllowEdit", "False")]
 
         [XafDisplayName("CuentaExterna")]
         public CuentaExtrena CuentaExterna
@@ -343,14 +380,24 @@ namespace Tesoreria.Module.BusinessObjects
             set { SetPropertyValue(nameof(CuentaExterna), ref _CuentaExterna, value); }
         }
 
-        private Clabe _Clabe;
-        [Association("Clabe-Datos")]
-
-        [XafDisplayName("Clabe")]
-        public Clabe Clabe
+        private string _Clabes;
+        [XafDisplayName("Clabe"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
+        [Persistent("Clabes")]
+        public string Clabes
         {
-            get { return _Clabe; }
-            set { SetPropertyValue(nameof(Clabe), ref _Clabe, value); }
+            get { return _Clabes; }
+            set { SetPropertyValue(nameof(Clabes), ref _Clabes, value); }
+        }
+
+        private string _ClabeProveedor;
+        [XafDisplayName("Clabe del proveedor"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
+        [Persistent("ClabeProveedor")]
+        public string ClabeProveedor
+        {
+            get { return _ClabeProveedor; }
+            set { SetPropertyValue(nameof(ClabeProveedor), ref _ClabeProveedor, value); }
         }
 
         //private string _CuentaCuentaClabeLineaCap;
@@ -510,6 +557,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private string _Banco;
         [XafDisplayName("Banco"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
         [Persistent("Banco")]
         public string Banco
         {
@@ -519,6 +567,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private string _TipoGasto;
         [XafDisplayName("Tipo Gasto"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
         [Persistent("TipoGasto")]
         public string TipoGasto
         {
@@ -528,6 +577,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private string _Nomenclatura;
         [XafDisplayName("Nomenclatura"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
         [Persistent("Nomenclatura")]
         public string Nomenclatura
         {
@@ -537,6 +587,7 @@ namespace Tesoreria.Module.BusinessObjects
 
         private string _NombreAlias;
         [XafDisplayName("Nombre/Alias"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
         [Persistent("NombreAlias")]
         public string NombreAlias
         {
@@ -546,11 +597,22 @@ namespace Tesoreria.Module.BusinessObjects
 
         private string _Concatenar;
         [XafDisplayName("Concatenar"), ToolTip("My hint message")]
+        [ModelDefault("AllowEdit", "False")]
         [Persistent("Concatenar")]
         public string Concatenar
         {
             get { return _Concatenar; }
             set { SetPropertyValue(nameof(Concatenar), ref _Concatenar, value); }
+        }
+
+        private FileData _Cargas;
+        [XafDisplayName("Cargas")]
+        [VisibleInDetailView(false)]
+        [Persistent("Cargas")]
+        public FileData Cargas
+        {
+            get { return _Cargas; }
+            set { SetPropertyValue(nameof(Cargas), ref _Cargas, value); }
         }
 
         //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
